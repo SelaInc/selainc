@@ -1,0 +1,12 @@
+{
+  "name": "cookieDirective",
+  "_release": "ea7e21bd0e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ea7e21bd0eecf05f3944ef2ff893f04dccfc1275"
+  },
+  "_source": "git@bitbucket.org:olliephillips/cookiesdirective.js.git",
+  "_target": "*",
+  "_originalSource": "git@bitbucket.org:olliephillips/cookiesdirective.js.git"
+}
