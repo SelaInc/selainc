@@ -22,7 +22,7 @@ angular
                 $scope.resultMessage = {};
                 $scope.result = 'hidden';
                 $scope.submitButtonDisabled = false;
-                $scope.querys = ['Advertising Enquiry', 'General Info', 'Complaint', 'Unsubscribe From Email', 'Technical Website Fault'];
+                $scope.querys = ['Website Design/Development', 'Branding/Logo Design', 'Advertising', 'Exhibition Design', 'Email Marketing','Something else'];
                 $scope.formData.query = $scope.querys[0];
 
                 $scope.submit = function (contactform) {
@@ -31,7 +31,7 @@ angular
                     if (contactform.$valid) {
                         $http({
                             method: 'POST',
-                            url: 'blog/contact-send.php',
+                            url: '/blog/contact-send.php',
                             data: $.param($scope.formData),  //param method from jQuery
                             headers: {'Content-Type': 'application/x-www-form-urlencoded'}  //set the headers so angular passing info as form data (not request payload)
                         }).success(function (data) {
